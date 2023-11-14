@@ -1,0 +1,233 @@
+#define RSCL32(a,b,c,d)   0x ## c ## d, 0x ## a ## b
+#define LC(a,b,c,d)       #d, #c, #b, #a
+#define RSCS32(a)         a, 0
+
+16000  PiPL  DISCARDABLE
+BEGIN
+	1, /* First byte must always be 1 */
+	0L, /* kCurrentPiPL Version */
+	   21L, /* Property count */
+	"MIB8", /* '8BIM' */
+	"dnik", /* 'kind' PIKindProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	"FIB8", /* '8BIF' Photoshop Format plug-in */
+
+	"MIB8", /* '8BIM' */
+	"eman", /* 'name' PINameProperty */
+	0L, /* Index */
+	   12L, /* Length */
+	"\010SuperPNG\0\0\0", 
+
+	"MIB8", /* '8BIM' */
+	"gtac", /* 'catg' PICategoryProperty */
+	0L, /* Index */
+	    8L, /* Length */
+	"\003PNG\0\0\0\0", 
+
+	"MIB8", /* '8BIM' */
+	"ytrp", /* 'prty' PIPriorityProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	1L, 
+
+	"MIB8", /* '8BIM' */
+	"srev", /* 'vers' PIVersionProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	0X00010000L, /* (Major << 16) | Minor */
+
+	"MIB8", /* '8BIM' */
+	"4668", /* '8664' PIWin64X86CodeProperty */
+	0L, /* Index */
+	   12L, /* Length */
+	"PluginMain\0\0", 
+
+	"MIB8", /* '8BIM' */
+	"mtsh", /* 'hstm' PITerminology */
+	0L, /* Index */
+	   32L, /* Length */
+	0L, /* Version */
+	"GNPs", /* Class ID */
+	"llun", /* Event ID */
+	16000, /* Terminology ID */
+	"fnord SuperPNG\0\0", /* Unique string */
+	    0, /* Padding */
+
+	"MIB8", /* '8BIM' */
+	"edom", /* 'mode' SupportedModes */
+	0L, /* Index */
+	    4L, /* Length */
+	0X00F0, /* Supported modes */
+	0, /* Reserved */
+
+	"MIB8", /* '8BIM' */
+	"lbne", /* 'enbl' EnableInfoProperty */
+	0L, /* Index */
+	  108L, /* Length */
+	"in (PSHOP_ImageMode, BitmapMode, GrayScaleMode, IndexedMode, RGBMode, Gray16Mode, RGB48Mode, RGBColorMode)\0\0", 
+
+	"MIB8", /* '8BIM' */
+	"CTmf", /* 'fmTC' PIFormatFileTypeProperty */
+	0L, /* Index */
+	    8L, /* Length */
+	"fGNP", 
+	"MIB8", 
+
+	"MIB8", /* '8BIM' */
+	"yTdR", /* 'RdTy' PIReadTypesProperty */
+	0L, /* Index */
+	    8L, /* Length */
+	"fGNP", 
+	"    ", 
+
+	"MIB8", /* '8BIM' */
+	"xEdR", /* 'RdEx' PIReadExtProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	"PNG ", 
+
+	"MIB8", /* '8BIM' */
+	"xErW", /* 'WrEx' PIWriteExtProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	"PNG ", 
+
+	"MIB8", /* '8BIM' */
+	"Etff", /* 'fftE' PIFilteredExtProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	"PNG ", 
+
+	"MIB8", /* '8BIM' */
+	"ftmf", /* 'fmtf' PIFmtFlagsProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	0X0000007CL, 
+
+	"MIB8", /* '8BIM' */
+	"23sm", /* 'ms32' PlugInMaxSize */
+	0L, /* Index */
+	    8L, /* Length */
+	2147483647L, 
+	2147483647L, 
+
+	"MIB8", /* '8BIM' */
+	"zsxm", /* 'mxsz' PIFmtMaxSizeProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	32767, /* Max x */
+	32767, /* Max y */
+
+	"MIB8", /* '8BIM' */
+	"hcxm", /* 'mxch' PIFmtMaxChannelsProperty */
+	0L, /* Index */
+	   24L, /* Length */
+	1, 2, 1, 4, 
+	0, 0, 0, 0, 
+	0, 0, 2, 4, 
+	
+	"MIB8", /* '8BIM' */
+	"pimf", /* 'fmip' PIFmtICCFlagsProperty */
+	0L, /* Index */
+	    4L, /* Length */
+	0X000000E0L, 
+
+	"MIB8", /* '8BIM' */
+	"wpmx", /* 'xmpw' XMPWrite */
+	0L, /* Index */
+	    4L, /* Length */
+	1L, 
+
+	"MIB8", /* '8BIM' */
+	"rpmx", /* 'xmpr' XMPRead */
+	0L, /* Index */
+	    4L, /* Length */
+	1L, 
+
+END
+
+16000  aete  DISCARDABLE
+BEGIN
+	1, /* First byte must always be 1 */
+	0X0001, /* majorVersion|minorVersion */
+	0, /* language */
+	0, /* script */
+	    1, /* Suite Count */
+	"\005fnord", 
+	"\026Super-duper PNG format", 
+	"4Kds", /* Suite ID */
+	1, /* Suite level */
+	1, /* Suite version */
+	    0, /* Event Count */
+	    1, /* Class count */
+	"\010SuperPNG", 
+	"GNPs", 
+	"\076A file format module for writing PNG files in Adobe Photoshop.", 
+	   10, /* Property count */
+	"\052$$$/private/AETE/Inheritance=<Inheritance>", 
+	"^#@c", 
+	" tmF", 
+	"\023parent class format", 
+	0X1000, /* Class flags */
+	"\013Compression", 
+	"Cgnp", 
+	"gnol", 
+	"\032PNG compression level used", 
+	0X1000, /* Class flags */
+	"\011Filtering", 
+	"Fgnp", 
+	"gnol", 
+	"\026PNG filtering property", 
+	0X1000, /* Class flags */
+	"\010Strategy", 
+	"Sgnp", 
+	"gnol", 
+	"\031zlib compression strategy", 
+	0X1000, /* Class flags */
+	"\013Interlacing", 
+	"Ignp", 
+	"loob", 
+	"\024PNG interlacing used", 
+	0X1000, /* Class flags */
+	"\011Meta Data", 
+	"Mgnp", 
+	"loob", 
+	"\022Save PNG Meta Data", 
+	0X1000, /* Class flags */
+	"\015Alpha Channel", 
+	"Agnp", 
+	"mune", 
+	"\033Source of the alpha channel", 
+	0X1000, /* Class flags */
+	"\021Clean Transparent", 
+	"Xgnp", 
+	"loob", 
+	"\034Clear areas where alpha is 0", 
+	0X1000, /* Class flags */
+	"\012Quantizing", 
+	"Qgnp", 
+	"loob", 
+	"\031Quantize and save as PNG8", 
+	0X1000, /* Class flags */
+	"\020Quantize Quality", 
+	"qgnp", 
+	"gnol", 
+	"\033Quality of the Quantization", 
+	0X1000, /* Class flags */
+	    0, /* Elements count */
+	0, /* Number of comparison ops (always 0) */
+	    1, /* Enum count */
+	"Tfla", 
+	    3, /* Alias count */
+	"\004None", 
+	"Nfla", 
+	"\020No alpha channel", 
+	"\014Transparency", 
+	"Tfla", 
+	"\033Get alpha from Transparency", 
+	"\007Channel", 
+	"Cfla", 
+	"\037Get alpha from channels palette", 
+END
+

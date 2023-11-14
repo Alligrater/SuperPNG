@@ -25,22 +25,22 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v142</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
@@ -235,7 +235,7 @@
     <ResourceCompile>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <Culture>0x0409</Culture>
-      <AdditionalIncludeDirectories>..\..\src\photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\ADM;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\AS;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\PICA;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\PS-Suites;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\SDK;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Rez-files\Photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Rez-files\SDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\..\src\photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\ADM;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\AS;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\PICA;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\Photoshop\PS-Suites;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Headers\SDK;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Rez-files\Photoshop;..\..\ext\adobe_photoshop_cs5_sdk_win\pluginsdk\samplecode\Common\Rez-files\SDK</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
       <AdditionalOptions>/VERBOSE:LIB %(AdditionalOptions)</AdditionalOptions>
